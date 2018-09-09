@@ -8,7 +8,9 @@ import time
 
 #we're pretending that the xlsx file is real-time data from the sensor
 
-df = pd.read_excel('/media/tan/Local Disk/Users/Admin/Desktop/SEHackathon/Document for Hackathon/Document for Hackaton/Att1 - Online daily data.xlsx')
+df = pd.read_excel('../data/Att1 - Online daily data.xlsx')
+
+print(df.shape[0])
 
 #rename the columns
 df.columns = ['Date', 'Site-A',
